@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_077a6831a44640ff91e5a3bf2d2137cc
       created: 1768894762562
-      modified: 1768993742240
+      modified: 1769066883984
       isPrivate: false
       description: ""
       sortKey: -1768894762562
@@ -20,10 +20,6 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/12.2.0
-        description: ""
-        disabled: false
-      - name: X-Redirect-Target
-        value: store
         description: ""
         disabled: false
     authentication:
