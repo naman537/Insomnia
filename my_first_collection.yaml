@@ -1,0 +1,109 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_3a33795689e44f15b42270fe5ae0b8a3
+  created: 1768894762534
+  modified: 1768894762534
+  description: ""
+collection:
+  - url: "{{_.base_url}}/kong-routes"
+    name: My first request
+    meta:
+      id: req_077a6831a44640ff91e5a3bf2d2137cc
+      created: 1768894762562
+      modified: 1768993742240
+      isPrivate: false
+      description: ""
+      sortKey: -1768894762562
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.2.0
+        description: ""
+        disabled: false
+      - name: X-Redirect-Target
+        value: store
+        description: ""
+        disabled: false
+    authentication:
+      type: apikey
+      key: apikey
+      value: abc123
+      disabled: false
+      addTo: header
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_93cf8f18c53722c0195ed64de6493dee827d190a
+    created: 1768894762558
+    modified: 1768971052941
+  cookies:
+    - id: 795c8975-2370-4849-926a-6da853d4e1c7
+      key: AWSALBTG
+      value: 1+rww+meMVOdZ9H8oiw83z8C7MoS82nJyMUagETAJPKjcV5qRVJJa5wyfnLRC7IJ7ipKwPl+urY+norMSRc3UQU2KzK9egCIcLKrQwQ0t/MipeDpx31AvOMn3zoWYwU+IqeqMcZo1Yw45Tba22hMbUytzp7GDAkdcFBnYAo/BddMXUNz1Vw=
+      domain: localhost
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: 1df92c7e-5ed9-42cf-9aef-fbe75fa65139
+      key: AWSALBTGCORS
+      value: 1+rww+meMVOdZ9H8oiw83z8C7MoS82nJyMUagETAJPKjcV5qRVJJa5wyfnLRC7IJ7ipKwPl+urY+norMSRc3UQU2KzK9egCIcLKrQwQ0t/MipeDpx31AvOMn3zoWYwU+IqeqMcZo1Yw45Tba22hMbUytzp7GDAkdcFBnYAo/BddMXUNz1Vw=
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: false
+      hostOnly: true
+    - id: 1d7f3dd4-88cd-4b6a-b6f3-f7d4c5f5a024
+      key: AWSALB
+      value: 60Mkmgns2KLLZRJEGDg/gCnaD22dLzHG3kqHpCpayPeacWX6JDmus8aS8xs+o/kgTb30Yq/5brwZTggW2N40gzgxmcVcWqhTRFlaYWSW4XxEse6KikqSltKMqHmA
+      domain: localhost
+      path: /
+      secure: false
+      httpOnly: false
+      hostOnly: true
+    - id: dc817a35-cf32-46d0-a2eb-ad3dfe8e2c61
+      key: AWSALBCORS
+      value: 60Mkmgns2KLLZRJEGDg/gCnaD22dLzHG3kqHpCpayPeacWX6JDmus8aS8xs+o/kgTb30Yq/5brwZTggW2N40gzgxmcVcWqhTRFlaYWSW4XxEse6KikqSltKMqHmA
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: false
+      hostOnly: true
+    - id: b1d18a4c-7af7-439d-bd4f-a1baaea0d45f
+      key: PHPSESSID
+      value: vcgpo6mp6ar2fpvp9jlar9to1t
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+environments:
+  name: dev
+  meta:
+    id: env_93cf8f18c53722c0195ed64de6493dee827d190a
+    created: 1768894762556
+    modified: 1768896491478
+    isPrivate: false
+  data:
+    base_url: http://localhost:8000
+  subEnvironments:
+    - name: dev
+      meta:
+        id: env_c663b4178d86495497d8444180072081
+        created: 1768894783501
+        modified: 1768896016902
+        isPrivate: false
+        sortKey: 1768894783501
+      data:
+        base_url: http://localhost:8001
+        api-key: dev-123-key
