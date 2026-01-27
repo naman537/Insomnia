@@ -30,14 +30,8 @@ spec:
         name: naman
         email: naman@support.com
     servers:
-      - url: http://localhost:8001
+      - url: http://httpbin.org:80
         description: This is the actual backend server.
-    x-kong-plugin-key-auth:
-      enabled: true
-      config:
-        key_names:
-          - apikey
-        hide_credentials: true
     tags:
       - name: kong-api
         description: This is the tag of the kong.
@@ -55,4 +49,4 @@ spec:
   meta:
     id: spc_38fea159320542398d4aeeeb6664966f
     created: 1768886599018
-    modified: 1769073207831
+    modified: 1769517589907

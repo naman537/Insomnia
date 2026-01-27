@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_077a6831a44640ff91e5a3bf2d2137cc
       created: 1768894762562
-      modified: 1769066883984
+      modified: 1769497678129
       isPrivate: false
       description: ""
       sortKey: -1768894762562
@@ -25,9 +25,27 @@ collection:
     authentication:
       type: apikey
       key: apikey
-      value: abc123
-      disabled: false
+      value: my-secret-api-key
+      disabled: true
       addTo: header
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/pet
+    name: New Request
+    meta:
+      id: req_166dbc641bda483681c4439cefe83da8
+      created: 1769084410639
+      modified: 1769084426391
+      isPrivate: false
+      description: ""
+      sortKey: -1769084410639
+    method: GET
     settings:
       renderRequestBody: true
       encodeUrl: true
