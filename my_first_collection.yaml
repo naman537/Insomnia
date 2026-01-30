@@ -7,12 +7,12 @@ meta:
   modified: 1768894762534
   description: ""
 collection:
-  - url: "{{_.base_url}}/jwt_routes"
+  - url: "{{_.base_url}}/kong-routes"
     name: My first request
     meta:
       id: req_077a6831a44640ff91e5a3bf2d2137cc
       created: 1768894762562
-      modified: 1769683392895
+      modified: 1769753912862
       isPrivate: false
       description: ""
       sortKey: -1768894762562
@@ -44,6 +44,29 @@ collection:
       description: ""
       sortKey: -1769084410639
     method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/kong-routes"
+    name: New Request
+    meta:
+      id: req_ae279beaa7a54c638fd2675b01ca752a
+      created: 1769754078968
+      modified: 1769754124479
+      isPrivate: false
+      description: ""
+      sortKey: -1769754078968
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.2.0
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
