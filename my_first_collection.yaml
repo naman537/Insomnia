@@ -7,12 +7,12 @@ meta:
   modified: 1768894762534
   description: ""
 collection:
-  - url: "{{_.base_url}}/kong-routes"
+  - url: "{{_.base_url}}/jwt_routes"
     name: My first request
     meta:
       id: req_077a6831a44640ff91e5a3bf2d2137cc
       created: 1768894762562
-      modified: 1768993742240
+      modified: 1769683392895
       isPrivate: false
       description: ""
       sortKey: -1768894762562
@@ -22,16 +22,28 @@ collection:
         value: insomnia/12.2.0
         description: ""
         disabled: false
-      - name: X-Redirect-Target
-        value: store
-        description: ""
-        disabled: false
     authentication:
-      type: apikey
-      key: apikey
-      value: abc123
-      disabled: false
-      addTo: header
+      type: bearer
+      disabled: true
+      token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLmNvbXBhbnkuY29tIiwic3ViIjoidXNlcjEyMyIsImlhdCI6MTc2OTU5Nzk2OCwiZXhwIjoxNzY5NTk4NTY4fQ.FJeSe1e13oQ5f1hPVV2w5gImtQzox7aOCy77M9vpF330vg2U86nstAdxeJ6JVoW42xEb-fEtDiTdDYz0lkVX8Ro87hcrxJD5SlbnL0V1dPa-BCCsuO5W0WxNt9v4pfvg7zZURhS2ITGCw4lcmZ6-q4MN7_CVMjw_ziKgM8l45D1DFF0pLZ53ffAwYKwd1AxtEcYbIsODXJAEukADMKfWZDHFUDWe6w-vtOiVEzhITt6DsY2p48ObAt5LyUG23Tpc-1htN6jIsHpoqtEbZ1AXL2qysnWK1RKiI6T6I70pOvyRpjYcoT8Qzco7cmYS4NiHFneuTOIBnMd1Lg-7FjdABg"
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/pet
+    name: New Request
+    meta:
+      id: req_166dbc641bda483681c4439cefe83da8
+      created: 1769084410639
+      modified: 1769084426391
+      isPrivate: false
+      description: ""
+      sortKey: -1769084410639
+    method: GET
     settings:
       renderRequestBody: true
       encodeUrl: true
