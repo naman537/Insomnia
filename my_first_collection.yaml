@@ -52,12 +52,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.base_url }}/kong-routes"
+  - url: "{{ _.base_url }}/health"
     name: New Request
     meta:
       id: req_ae279beaa7a54c638fd2675b01ca752a
       created: 1769754078968
-      modified: 1769754124479
+      modified: 1770009503794
       isPrivate: false
       description: ""
       sortKey: -1769754078968

@@ -31,10 +31,11 @@ spec:
         email: naman@support.com
     servers:
       - url: http://httpbin.org:80
-        description: This is the backend server.
+        description: This is the real backend server.
     tags:
       - name: kong-api
         description: This is the tag of the kong.
+      - name: kong-health
     paths:
       /kong-routes:
         get:
@@ -46,7 +47,17 @@ spec:
           responses:
             "200":
               description: ok
+      /health:
+        get:
+          summary: This is the health check.
+          description: This is the route for the health check.
+          operationId: efgh
+          tags:
+            - kong-health
+          responses:
+            "200":
+              description: ok
   meta:
     id: spc_38fea159320542398d4aeeeb6664966f
     created: 1768886599018
-    modified: 1769691157035
+    modified: 1770009487852
